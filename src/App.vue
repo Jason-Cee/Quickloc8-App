@@ -1,19 +1,35 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <LoadingScreen :isLoading="isLoading" />
+    <main v-if="!isLoading">
+    </main>
+    <Map/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Map from "./components/Map.vue"; 
+import LoadingScreen from "./components/LoadingScreen";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Map,
+    LoadingScreen
+},
+  data() {
+    return { 
+      isLoading: true, }
+  },
+  mounted() {
+    console.log('Component mounted.'),
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 
+    3500);
+  },
+  
+};
 </script>
 
 <style>
