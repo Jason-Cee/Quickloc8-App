@@ -930,6 +930,11 @@
   dependencies:
     "@googlemaps/markerclustererplus" "^1.2.3"
 
+"@google/markerclustererplus@^5.1.0":
+  "integrity" "sha512-2wQGO6GGbKPC2tNmTz8ei1zBa64zV3QBBvgLHiPvYqUA63230qNqfQpN+nzsrl1RM40NJtty4Y1CEQKxq6MBGg=="
+  "resolved" "https://registry.npmjs.org/@google/markerclustererplus/-/markerclustererplus-5.1.3.tgz"
+  "version" "5.1.3"
+
 "@googlemaps/markerclustererplus@^1.2.3":
   "integrity" "sha512-HY4ev+D3kO1+9oQjtKTojxVtJIS/kSWJfry6cpKoXC97kBQc5Vguqu5x6pLnh+70N0Au+16Yl7iu4LZaIOTstw=="
   "resolved" "https://registry.npmjs.org/@googlemaps/markerclustererplus/-/markerclustererplus-1.2.10.tgz"
@@ -1025,6 +1030,16 @@
   "integrity" "sha512-Es6WcD0nO5l+2BOQS4uLfNPYQaNDfbot3X1XUoloz+x0mPDS3eeORZJl06HXjwBG1fOGwCRnzK88LMdxKRrd6Q=="
   "resolved" "https://registry.npmjs.org/@mapbox/whoots-js/-/whoots-js-3.1.0.tgz"
   "version" "3.1.0"
+
+"@mdi/font@^6.5.95":
+  "integrity" "sha512-ES5rj6J39FUkHe/b3C9SJs8bqIungYhuU7rBINTBaHOv/Ce4RCb3Gw08CZVl32W33UEkgRkzyWaIedV4at+QHg=="
+  "resolved" "https://registry.npmjs.org/@mdi/font/-/font-6.5.95.tgz"
+  "version" "6.5.95"
+
+"@mdi/js@^6.5.95":
+  "integrity" "sha512-x/bwEoAGP+Mo10Dfk5audNIPi7Yz8ZBrILcbXLW3ShOI/njpgodzpgpC2WYK3D2ZSC392peRRemIFb/JsyzzYQ=="
+  "resolved" "https://registry.npmjs.org/@mdi/js/-/js-6.5.95.tgz"
+  "version" "6.5.95"
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   "integrity" "sha512-bPHp6Ji8b41szTOcaP63VlnbbO5Ny6dwAATtY6JTjh5N2OLrb5Qk/Th5cRkRQhkWCt+EJsYrNB0MiL+Gpn6e3g=="
@@ -4339,6 +4354,13 @@
     "ignore" "^4.0.3"
     "pify" "^4.0.1"
     "slash" "^2.0.0"
+
+"gmap-vue@^1.5.0":
+  "integrity" "sha512-WE0VnSM1EsaTFVsnq53WGnre9cP1Q9DPCr0IiPmaoqsQioAKtTNBNyomrEvg0NIsVuxrdC2qvbgZPXCa8v/mBA=="
+  "resolved" "https://registry.npmjs.org/gmap-vue/-/gmap-vue-1.5.0.tgz"
+  "version" "1.5.0"
+  dependencies:
+    "@google/markerclustererplus" "^5.1.0"
 
 "graceful-fs@^4.1.11", "graceful-fs@^4.1.15", "graceful-fs@^4.1.2", "graceful-fs@^4.1.6":
   "integrity" "sha512-NtNxqUcXgpW2iMrfqSfR73Glt39K+BLwWsPs94yR63v45T0Wbej7eRmL5cWfwEgqXnmjQp3zaJTshdRW/qC2ZQ=="
@@ -8572,10 +8594,18 @@
   "resolved" "https://registry.npmjs.org/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz"
   "version" "1.9.1"
 
-"vue@^2 || ^3.0.0-0", "vue@^2.0.1", "vue@^2.5.17", "vue@^2.6.11", "vue@^2.6.6":
+"vue@^2 || ^3.0.0-0", "vue@^2.0.1", "vue@^2.5.17", "vue@^2.6.11", "vue@^2.6.6", "vue@^2.x":
   "integrity" "sha512-x2284lgYvjOMj3Za7kqzRcUSxBboHqtgRE2zlos1qWaOye5yUmHn42LB1250NJBLRwEcdrB0JRwyPTEPhfQjiQ=="
   "resolved" "https://registry.npmjs.org/vue/-/vue-2.6.14.tgz"
   "version" "2.6.14"
+
+"vue2-gmap-custom-marker@^6.0.1":
+  "integrity" "sha512-oYzH3Pdydu7n+GJsGfhxeCUasg8z+9YvthZ0OyNjmUgyyPaxjDjR+eX6RhFD1bcOGQstwi6ZaeEOjqAiuuorhg=="
+  "resolved" "https://registry.npmjs.org/vue2-gmap-custom-marker/-/vue2-gmap-custom-marker-6.0.1.tgz"
+  "version" "6.0.1"
+  dependencies:
+    "gmap-vue" "^1.5.0"
+    "vue" "^2.x"
 
 "vue2-google-maps@^0.10.7":
   "integrity" "sha512-y5aBJTAsfGvpsbfgPaeWU7o7QbOeINZKsP6SB9qrBe8U8EYBFO/bTWo3rcMq/NOtgT/XssV3Nwg/2u3no6jWbw=="
