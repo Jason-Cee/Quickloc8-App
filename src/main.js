@@ -1,7 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueGeolocation from 'vue-browser-geolocation'
+import VueRouter from 'vue-router'
+import Messages from './components/Messages.vue'
 
+Vue.use(VueRouter)
 
 Vue.config.productionTip = false
 Vue.use(VueGeolocation)
@@ -14,36 +17,21 @@ Vue.use(VueGoogleMaps, {
 })
 
 new Vue({
+  router,
   render: h => h(App),
 }).$mount('#app')
 
+const routes = [
+  {
+    path: '/', component: App
+  },
+  {
+      path: '/messages', component: Messages
+  },
+];
 
-// const taxi1 = { lat: -33.876115, lng: 18.5008116 };
-// const taxi2 = { lat: -33.9685533, lng: 18.5662383 };
-// const taxi3 = { lat: -34.0461583, lng: 18.7047383 };
-// const taxi4 = { lat: -31.8994016, lng: 26.8671716 };
-// const taxi5 = { lat: -31.8942983, lng: 26.878175 };
-// const taxi6 = { lat: -31.9998233, lng: 27.5801216 };
-
-// drawMarkers() {
-//   this.markers = [
-//     {
-//       position: taxi1,
-//     },
-//     {
-//       position: taxi2,
-//     },
-//     {
-//       position: taxi3,
-//     },
-//     {
-//       position: taxi4,
-//     },
-//     {
-//       position: taxi5,
-//     },
-//     {
-//       position: taxi6,
-//     }
-//   ];
-// },
+const router = new VueRouter({
+  mode: 'history',
+  // base: process.env.BASE_URL,
+  routes
+});

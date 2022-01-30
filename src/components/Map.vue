@@ -66,23 +66,30 @@ export default {
 </script>
 
 <style>
-#mapContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#btnContainer {
+#mapContainer {
   display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  height: 100vh; 
+  width: 100vw;
+  margin-bottom: 20rem;
+  position: relative;
+  top: 0;
+
 }
 
 #btnContainer button {
-  width: 100px;
-  margin: 20px;
-  color: #2e302f;
-  background: white;
-  border: none;
-  padding: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: .25em 1em;
+  border-radius: .25em;
+  margin: 10px;
 }
 </style>

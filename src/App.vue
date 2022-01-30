@@ -1,37 +1,40 @@
 <template>
   <div id="app">
-    <!-- <LoadingScreen :isLoading="isLoading" />
+    <LoadingScreen :isLoading="isLoading" />
     <main v-if="!isLoading">
-    </main> -->
-    <button class="msgBtn">
+    </main>
+    <a class="msgBtn" href="#messages">
       <img src="./assets/comment-multiple-outline.svg">
-    </button>
+    </a>
     <Map/>
+    <Messages/>
   </div>
 </template>
 
 <script>
-import Map from "./components/Map.vue"; 
-// import LoadingScreen from "./components/LoadingScreen";
+import Map from "./components/Map.vue";
+import Messages from "./components/Messages.vue"; 
+import LoadingScreen from "./components/LoadingScreen";
 
 
 export default {
   name: "App",
   components: {
     Map,
-    // LoadingScreen
+    LoadingScreen,
+    Messages
 },
-  // data() {
-  //   return { 
-  //     isLoading: true, }
-  // },
-  // mounted() {
-  //   console.log('Component mounted.'),
-  //   setTimeout(() => {
-  //     this.isLoading = false;
-  //   }, 
-  //   3500);
-  // },
+  data() {
+    return { 
+      isLoading: true, }
+  },
+  mounted() {
+    console.log('Component mounted.'),
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 
+    3500);
+  },
   
 };
 </script>
@@ -43,10 +46,12 @@ export default {
   box-sizing: border-box;
 }
 
+body {
+  overflow: hidden;
+}
+
 #app {
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(to left, #FFCCBC, #FF5722);
+  background: #FFCCBC;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

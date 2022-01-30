@@ -19,6 +19,7 @@
     "vue": "^2.6.11",
     "vue-browser-geolocation": "^1.8.0",
     "vue-mapbox": "^0.4.1",
+    "vue-router": "^3.5.3",
     "vue2-gmap-custom-marker": "^6.0.1",
     "vue2-leaflet": "^2.7.1"
   },

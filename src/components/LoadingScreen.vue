@@ -1,6 +1,6 @@
 <template>
 <div :class="{ loader: true, fadeout: !isLoading }">
-<img src="../assets/Quicloc8-logo.png" />
+    <img src="../assets/Quicloc8-logo.png" />
 </div>
 </template>
 
@@ -12,6 +12,14 @@ props: ["isLoading"],
 </script>
 
 <style>
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .loader {
 background-color: #FFCCBC;
 bottom: 0;
@@ -30,9 +38,11 @@ top: 0;
 z-index: 900;
 }
 
+
 .loader img {
 position: relative;
 top: 25%;
+background-color: #FF5722;
 }
 
 .fadeout {
