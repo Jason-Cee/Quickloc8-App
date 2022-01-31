@@ -3,7 +3,7 @@
     <LoadingScreen :isLoading="isLoading" />
     <main v-if="!isLoading">
     </main>
-    <a class="msgBtn" href="#messages">
+    <a class="msgBtn" href="#message">
       <img src="./assets/comment-multiple-outline.svg">
     </a>
     <Map/>
@@ -56,6 +56,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  height: 100vh;
 }
 
 .msgBtn {

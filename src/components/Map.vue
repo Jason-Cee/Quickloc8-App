@@ -7,7 +7,7 @@
       <GmapMap
         :center="center"
         :zoom="7"
-        style="width:70%;  height: 400px; top:100px; right:1.5%;"
+        style="width: 1000px; height: 540px"
       >
         <GmapMarker
           :key="index"
@@ -71,25 +71,23 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
-
-#mapContainer {
+ #mapContainer {
   display: flex;
-  /* justify-content: center; */
-  align-items: center;
   flex-direction: column;
-  height: 100vh; 
-  width: 100vw;
-  margin-bottom: 20rem;
-  position: relative;
-  top: 0;
-
-}
-
+  align-items: center;
+  /* position: relative;
+  bottom: 20px; */
+ }
 #btnContainer button {
   font-size: 1.5rem;
   cursor: pointer;
   padding: .25em 1em;
   border-radius: .25em;
   margin: 10px;
+}
+
+.vue-map-container{
+  width: 60vw;
+  height: 70vh !important;
 }
 </style>
