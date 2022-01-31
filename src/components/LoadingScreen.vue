@@ -42,7 +42,6 @@ z-index: 900;
 .loader img {
 position: relative;
 top: 25%;
-background-color: #FF5722;
 }
 
 .fadeout {

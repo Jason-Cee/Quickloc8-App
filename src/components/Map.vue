@@ -75,6 +75,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
   /* position: relative;
   bottom: 20px; */
  }
